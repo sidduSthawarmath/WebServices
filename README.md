@@ -84,7 +84,7 @@ Note:
 JAX-RS annotations:
 --------------------
 
-1.Path :
+1. Path :
 -------- 
    It identifies the URI path. It can be specified on class or method.
    
@@ -93,50 +93,50 @@ JAX-RS annotations:
 -------- 
    specifies method responds to GET request.
    
-3.POST :
+3. POST :
 -------- 
    specifies method responds to POST request.
    
-4.PUT :
+4. PUT :
 -------- 
    specifies method responds to PUT request.
    
-5.HEAD :
+5. HEAD :
 -------- 
    specifies method responds to HEAD request.
    
-6.DELETE :
+6. DELETE :
 -------- 
    specifies method responds to DELETE request.
    
-7.OPTIONS :
+7. OPTIONS :
 -------- 
    specifies method responds to OPTIONS request.
    
-8.FormParam :
+8. FormParam :
 -------- 
    represents the parameter of the form.
    
-9.QueryParam :
+9. QueryParam :
 -------- 
    represents the parameter of the query string of an URL.
    
-10.HeaderParam :
+10. HeaderParam :
 -------- 
    represents the parameter of the header.
    
-11.CookieParam :
+11. CookieParam :
    represents the parameter of the cookie.
    
 12. Produces :
 -------- 
    defines media type for the response such as XML, PLAIN, JSON etc. It defines the media type that the methods of a   resource class or MessageBodyWriter can produce.
    
-13.Consumes :
+13. Consumes :
 -------- 
   It defines the media type that the methods of a resource class or MessageBodyReader can produce.
 
-14.PathParam : 
+14. PathParam : 
 -------- 
    represents the parameter of the URI path.
 	
