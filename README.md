@@ -89,7 +89,7 @@ JAX-RS annotations:
    It identifies the URI path. It can be specified on class or method.
    
 
-2.GET :
+2. GET :
 -------- 
    specifies method responds to GET request.
    
