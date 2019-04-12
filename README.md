@@ -86,8 +86,8 @@ JAX-RS annotations:
 
 1.Path : 
    It identifies the URI path. It can be specified on class or method.
-PathParam : 
-   represents the parameter of the URI path.
+   
+
 2.GET :
    specifies method responds to GET request.
 3.POST :
@@ -113,6 +113,7 @@ PathParam :
 13.Consumes :
   It defines the media type that the methods of a resource class or MessageBodyReader can produce.
 
-
+14.PathParam : 
+   represents the parameter of the URI path.
 	
 
