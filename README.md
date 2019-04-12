@@ -84,7 +84,8 @@ Note:
 JAX-RS annotations:
 --------------------
 
-1.Path : 
+1.Path :
+-------- 
    It identifies the URI path. It can be specified on class or method.
    
 
