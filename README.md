@@ -84,9 +84,9 @@ Note:
 JAX-RS annotations:
 --------------------
 
-###Path :
+###Path : ###
    It identifies the URI path. It can be specified on class or method.
-###PathParam :
+###PathParam : ###
    represents the parameter of the URI path.
 ###2.GET :
    specifies method responds to GET request.
