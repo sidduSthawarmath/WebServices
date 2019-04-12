@@ -126,10 +126,11 @@ JAX-RS annotations:
    represents the parameter of the header.
    
 11. CookieParam :
+----------------
    represents the parameter of the cookie.
    
 12. Produces :
--------- 
+----------------
    defines media type for the response such as XML, PLAIN, JSON etc. It defines the media type that the methods of a   resource class or MessageBodyWriter can produce.
    
 13. Consumes :
