@@ -20,7 +20,7 @@ public class StudentDao {
 
 	// Add student Details
 	public List<Student> addStudent(Student student) {
-		student.setRollNum((studentList.get(studentList.size()-1)).getRollNum()+1);
+		student.setRollNum((studentList.get(studentList.size() - 1)).getRollNum() + 1);
 		studentList.add(student);
 		return studentList;
 	}
@@ -59,16 +59,15 @@ public class StudentDao {
 		return studentList;
 	}
 
-	
-/*	
-	public static void main(String[] args) {
-		
-		List<Student> studentList = new ArrayList<>(Arrays.asList(new Student(1, "Siddu", "1234"),
-				new Student(2, "Ganesh", "1235"), new Student(3, "Mahesh", "1236"), new Student(4, "Ram", "1237")));
-		
-		studentList.remove(0);
-		System.out.println(studentList);
-		
-		
-	}*/
+	public Student findStudentByRollNum(int rollNum) {
+		Student student = new Student();
+		for (Student studentDet : studentList) {
+			if (studentDet.getRollNum() == rollNum) {
+				student = studentDet;
+				break;
+			}
+		}
+		return student;
+	}
+
 }

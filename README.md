@@ -124,13 +124,15 @@ JAX-RS annotations:
       
 9. QueryParam :
    represents the parameter of the query string of an URL.
+   Example:
+   http://localhost:7070/WebServices/rest/students/findByRollNum?rollNum=1
    
 10. HeaderParam :
-
    represents the parameter of the header.
+   Example : http://localhost:7070/WebServices/rest/students/headerParam
+  			 need to set userName and its value in httpHeader
    
 11. CookieParam :
-
    represents the parameter of the cookie.
    
 12. Produces :
@@ -143,5 +145,27 @@ JAX-RS annotations:
 
 14. PathParam :
     represents the parameter of the URI path.
+    
+    
+ 
+ 
+File Download
+-------------------
+
+1.PDF file download :
+http://localhost:7070/WebServices/rest/file/pdf
+
+
+2.Image file download :
+http://localhost:7070/WebServices/rest/file/image
+
+
+3.Text file download :
+http://localhost:7070/WebServices/rest/file/textfile
+
+
+
+
+ 
 	
 
