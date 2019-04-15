@@ -104,6 +104,8 @@ JAX-RS annotations:
 5. HEAD :
 
    specifies method responds to HEAD request.
+   The HEAD method is almost identical to GET, except without the response body. In other words, if GET /users 
+   returns a list of users, then HEAD /users will make the same request but won't get back the list of users.
    
 6. DELETE :
 
@@ -112,13 +114,15 @@ JAX-RS annotations:
 7. OPTIONS :
 
    specifies method responds to OPTIONS request.
+    the response should be a 200 OK and have an Allow header with a list of HTTP methods that may be used on this 	resource. As an authorized user on an API, if you were to request OPTIONS /users/me, you should receive something 	like…
+	200 OK
+	Allow: HEAD,GET,PUT,DELETE,OPTIONS
    
 8. FormParam :
-
    represents the parameter of the form.
-   
+   Example : http://localhost:7070/WebServices/rest/students/saveStdDet   
+      
 9. QueryParam :
-
    represents the parameter of the query string of an URL.
    
 10. HeaderParam :
@@ -137,8 +141,7 @@ JAX-RS annotations:
 
   It defines the media type that the methods of a resource class or MessageBodyReader can produce.
 
-14. PathParam : 
-
-   represents the parameter of the URI path.
+14. PathParam :
+    represents the parameter of the URI path.
 	
 

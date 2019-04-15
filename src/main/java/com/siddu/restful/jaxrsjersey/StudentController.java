@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
+import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
@@ -42,7 +43,7 @@ public class StudentController {
 	@PUT
 	@Path("/updateStudentName")
 	@Produces({ MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON })
-	public List<Student> updateStudentName(@QueryParam ("rollNum") int rollNum, @QueryParam("name") String name) {
+	public List<Student> updateStudentName(@QueryParam("rollNum") int rollNum, @QueryParam("name") String name) {
 		return studentDao.updateNameByRollNum(rollNum, name);
 	}
 
@@ -51,6 +52,19 @@ public class StudentController {
 	@Path("/findAll")
 	@Produces({ MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON })
 	public List<Student> findAll() {
+		return studentDao.findAllStudents();
+	}
+
+	@POST
+	@Path("/saveStdDet")
+	// @Consumes({ MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON })
+	@Produces({ MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON })
+	public List<Student> saveStudent(@FormParam("rollNum") int rollNum, @FormParam("name") String name,
+			@FormParam("phoneNum") String phoneNum) {
+		Student student = new Student();
+		student.setName(name);
+		student.setPhoneNum(phoneNum);
+		studentDao.addStudent(student);
 		return studentDao.findAllStudents();
 	}
 
